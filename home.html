@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Home</h1>
+    <script>
+      function checkTokenAndRedirect() {
+        // Intenta obtener el token del localStorage
+        const token = JSON.parse(localStorage.getItem('token') || null); // O sessionStorage si prefieres
+        console.log('home LINE 16 =>', token?.jwt);
+        // Si el token no existe, redirige al login (index.html)
+        if (!token.jwt) {
+          window.location.href = 'index.html'; // Redirige a la página de login
+        }
+      }
+
+      // Llamar a la función para verificar y redirigir
+      checkTokenAndRedirect();
+    </script>
+  </body>
+</html>
