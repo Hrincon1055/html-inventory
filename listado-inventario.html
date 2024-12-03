@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <title>Home</title>
+    <title>Listado Inventario</title>
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/5.3/examples/sign-in/" />
@@ -33,7 +33,7 @@
           <hr />
           <ul class="nav nav-pills flex-column mb-auto">
             <li>
-              <a href="/home.html" class="nav-link active">
+              <a href="/home.html" class="nav-link text-white">
                 <svg class="bi pe-none me-2" width="16" height="16">
                   <use xlink:href="#speedometer2" />
                 </svg>
@@ -41,9 +41,7 @@
               </a>
             </li>
             <li>
-              <a
-                href="/listado-inventario.html"
-                class="nav-link text-white">
+              <a href="/listado-inventario.html" class="nav-link active">
                 <svg class="bi pe-none me-2" width="16" height="16">
                   <use xlink:href="#table" />
                 </svg>
@@ -84,55 +82,16 @@
                 class="btn btn-link m-0 p-0">
                 Regresar
               </button>
-              <h1>Dashboard</h1>
+              <h1>Inventario</h1>
             </div>
           </div>
-          <div class="row justify-content-center gap-5">
-            <div
-              class="card position-relative shadow-lg"
-              style="width: 25rem; border-radius: 10px">
-              <!-- Conteo en la parte superior izquierda -->
-              <span
-                class="position-absolute top-0 start-0 m-2 badge bg-primary rounded-pill px-3 py-2 fs-6"
-                >2</span
-              >
-
-              <!-- Contenido principal de la tarjeta -->
-              <div class="card-body">
-                <h5 class="card-title text-center">
-                  Elementos en estado pendiente
-                </h5>
-                <p class="card-text text-muted">
-                  This order is currently being processed. Check the
-                  details below or contact support for more information.
-                </p>
-              </div>
-
-              <!-- Estado en la parte inferior derecha -->
-              <span
-                class="position-absolute bottom-0 end-0 m-2 badge bg-danger rounded-pill px-3 py-2 fs-6"
-                >Pending</span
-              >
-            </div>
-            <div class="card" style="width: 25rem">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and
-                  make up the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card" style="width: 25rem">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and
-                  make up the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+          <div class="row">
+            <div class="col">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Placeat, perferendis nemo. Tempora ratione deleniti assumenda
+              iure aut cumque similique repellendus earum facilis dolorum,
+              ullam perferendis consequatur voluptatum blanditiis quas
+              sint.
             </div>
           </div>
         </div>
@@ -144,19 +103,5 @@
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/logout.js"></script>
     <script src="./assets/js/user-login.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        axios
-          .get('/categories')
-          .then(function (response) {
-            // Manejar la respuesta
-            console.log(response.data);
-          })
-          .catch(function (error) {
-            // Manejar el error
-            console.error('Error:', error);
-          });
-      });
-    </script>
   </body>
 </html>
